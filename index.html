@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="th">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,37 +8,44 @@
     <style>
         /* ตั้งค่าพื้นฐาน */
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
             line-height: 1.6;
             margin: 0;
             padding: 0;
             background-color: #f4f4f4;
+            color: #333;
         }
 
         header {
             background: #333;
             color: #fff;
             text-align: center;
-            padding: 10px 0;
+            padding: 20px 0;
         }
 
-        h1 {
+        header h1 {
             margin: 0;
+            font-size: 2rem;
         }
 
         /* Section Styling */
         section {
             padding: 20px;
-            margin: 10px 0;
+            margin: 20px auto;
+            max-width: 800px;
             background: #fff;
             border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
         }
 
         h2 {
             color: #333;
+            font-size: 1.5rem;
+            border-bottom: 2px solid #f4f4f4;
+            padding-bottom: 10px;
+            margin-bottom: 15px;
         }
 
-        /* Styling for Lists */
         ul {
             list-style-type: none;
             padding: 0;
@@ -45,6 +53,7 @@
 
         li {
             margin: 10px 0;
+            font-size: 1.1rem;
         }
 
         li img {
@@ -52,54 +61,70 @@
             border-radius: 50%;
         }
 
-        /* Footer Styling */
         footer {
             text-align: center;
-            padding: 10px;
+            padding: 15px;
             background: #333;
             color: #fff;
+            margin-top: 40px;
         }
+
+        footer p {
+            margin: 0;
+        }
+
+        /* เพิ่มการตกแต่งของลิงค์ */
+        a {
+            color: #0073e6;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
     </style>
 </head>
+
 <body>
     <header>
-        <h1>หน้าแรก GitHub.io ของนักศึกษา</h1>
+        <h1>Portfolio ของนักศึกษา</h1>
     </header>
 
     <section id="intro">
         <h2>1. แนะนำตัว (Introduction / Profile)</h2>
         <ul>
-            <li>พัชราภา มหาวงค์</li>
-            <li>รูปโปรไฟล์: <img src="pp.jpg" alt="Profile Image"></li>
-            <li>ความสนใจ: AI, Web Dev, Cybersecurity, Data Science</li>
+            <li><strong>ชื่อ-นามสกุล:</strong> พัชราภา มหาวงค์</li>
+            <li><strong>รูปโปรไฟล์:</strong> <img src="pp.jpg" alt="Profile Image"></li>
+            <li><strong>ความสนใจ:</strong> AI, Web Dev, Cybersecurity, Data Science</li>
         </ul>
     </section>
 
     <section id="skills">
         <h2>2. ทักษะ (Skills)</h2>
         <ul>
-            <li>Programming: Python, Java, HTML/CSS, JavaScript</li>
-            <li>AI & Data: TensorFlow, scikit-learn, Power BI, SQL</li>
-            <li>Tools: Git, VS Code, Figma, Google Colab</li>
+            <li><strong>Programming:</strong> Python, Java, HTML/CSS, JavaScript</li>
+            <li><strong>AI & Data:</strong> TensorFlow, scikit-learn, Power BI, SQL</li>
+            <li><strong>Tools:</strong> Git, VS Code, Figma, Google Colab</li>
         </ul>
     </section>
 
     <section id="projects">
         <h2>3. ผลงานที่ผ่านม (Projects / Portfolio)</h2>
         <ul>
-            <li>ระบบค้าขายอออนไลน์ (E-commerce)</li>
-            <li>เว็บไซต์ประเพณี</li>
+            <li><strong>ระบบค้าขายออนไลน์ (E-commerce)</strong></li>
+            <li><strong>เว็บไซต์ประเพณี</strong></li>
         </ul>
     </section>
 
     <section id="education">
         <h2>4. การศึกษา (Education)</h2>
         <ul>
-            <li>โรงเรียนบ้านบ้านอีอูด ระดับอนุบาล</li>
-            <li>โรงเรียนบ้านปากอูน(ปากอูนผดุงววิทย์) ระดับประถมศึกษา</li>
-            <li>โรงเรียนสหราษฎร์รังสฤษดิ์ ระดับมัธยมศึกษา</li>
-            <li>คณะวิทยาศาสตร์ สาขาเทคโนโลยีสารสนเทศ</li>
-            <li>มหาวิทยาลัยราชภัฏอุดรธานี พ.ศ.2566-ปัจจุบัน</li>
+            <li><strong>โรงเรียนบ้านบ้านอีอูด</strong> ระดับอนุบาล</li>
+            <li><strong>โรงเรียนบ้านปากอูน(ปากอูนผดุงวิทย์)</strong> ระดับประถมศึกษา</li>
+            <li><strong>โรงเรียนสหราษฎร์รังสฤษดิ์</strong> ระดับมัธยมศึกษา</li>
+            <li><strong>คณะวิทยาศาสตร์ สาขาเทคโนโลยีสารสนเทศ</strong></li>
+            <li><strong>มหาวิทยาลัยราชภัฏอุดรธานี</strong> พ.ศ.2566-ปัจจุบัน</li>
         </ul>
     </section>
 
@@ -116,13 +141,13 @@
     <section id="contact">
         <h2>6. ติดต่อ (Contact)</h2>
         <ul>
-            <li>Email: 66040233117@udru.ac.th</li>
-            <li>LinkedIn: linkedin.com/in/yourprofile</li>
+            <li><strong>Email:</strong> <a href="mailto:66040233117@udru.ac.th">66040233117@udru.ac.th</a></li>
+            <li><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/yourprofile" target="_blank">linkedin.com/in/yourprofile</a></li>
         </ul>
     </section>
 
     <footer>
-        <p>&copy; 2025 ชื่อของคุณ</p>
+        <p>&copy; 2025 พัชราภา มหาวงค์</p>
     </footer>
 
     <script>
@@ -130,4 +155,5 @@
         console.log("Welcome to my Portfolio!");
     </script>
 </body>
+
 </html>
