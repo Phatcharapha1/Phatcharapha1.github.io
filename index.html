@@ -38,6 +38,7 @@
             background: #fff;
             border-radius: 12px;
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            text-align: center; /* Center content in the section */
         }
 
         section h2 {
@@ -60,11 +61,12 @@
         }
 
         li img {
-            max-width: 120px; /* ขนาดรูปโปรไฟล์ที่ลดลง */
-            height: auto;
-            border-radius: 50%;
-            margin-right: 15px;
-            vertical-align: middle;
+            display: block;
+            margin: 0 auto; /* Center the image */
+            max-width: 120px; /* Set max width for profile picture */
+            height: 120px; /* Set fixed height for round shape */
+            border-radius: 50%; /* Make the image round */
+            object-fit: cover; /* Ensure the image fits in the circle without distortion */
         }
 
         li strong {
@@ -125,7 +127,7 @@
     <section id="intro">
         <h2>1. แนะนำตัว (Introduction / Profile)</h2>
         <div>
-            <!-- รูปโปรไฟล์ขนาดเล็ก -->
+            <!-- รูปโปรไฟล์ที่ปรับขนาดเป็นวงกลมและจัดตรงกลาง -->
             <img src="pp.jpg" alt="Profile Image">
             <ul>
                 <li><strong>ชื่อ-นามสกุล:</strong> พัชราภา มหาวงค์</li>
@@ -144,7 +146,7 @@
     </section>
 
     <section id="projects">
-        <h2>3. ผลงานที่ผ่านม (Projects / Portfolio)</h2>
+        <h2>3. ผลงานที่ผ่านมา (Projects / Portfolio)</h2>
         <ul>
             <li><strong>ระบบค้าขายออนไลน์ (E-commerce)</strong> - ระบบขายสินค้าออนไลน์ที่รองรับการชำระเงินและการจัดการสต็อก</li>
             <li><strong>เว็บไซต์ประเพณี</strong> - เว็บไซต์ที่รวบรวมข้อมูลประเพณีต่างๆ ในท้องถิ่น</li>
@@ -176,7 +178,7 @@
         <h2>6. ติดต่อ (Contact)</h2>
         <ul>
             <li><strong>Email:</strong> <a href="mailto:66040233117@udru.ac.th">66040233117@udru.ac.th</a></li>
-            
+           
         </ul>
     </section>
 
